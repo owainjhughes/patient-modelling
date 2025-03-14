@@ -83,6 +83,12 @@ if 'index' in numeric_cols:
 if 'ICU' in numeric_cols:
     numeric_cols.remove('ICU')
 
+# Remove columns that are categorical
+if 'SEX' in numeric_cols:
+    numeric_cols.remove('SEX')
+if 'CLASIFFICATION_FINAL' in numeric_cols:
+    numeric_cols.remove('CLASIFFICATION_FINAL')
+
 print("Numeric columns to normalize:", numeric_cols)
 
 # Create a StandardScaler object
