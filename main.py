@@ -83,6 +83,12 @@ if 'index' in numeric_cols:
 if 'ICU' in numeric_cols:
     numeric_cols.remove('ICU')
 
+ # **New Lines**: Remove columns that are categorical and shouldn't be normalized
+if 'SEX' in numeric_cols:
+    numeric_cols.remove('SEX')
+if 'CLASIFFICATION_FINAL' in numeric_cols:
+    numeric_cols.remove('CLASIFFICATION_FINAL')
+
 print("Numeric columns to normalize:", numeric_cols)
 
 # Create a StandardScaler object
@@ -137,4 +143,3 @@ plt.ylabel('ICU (Indicator)')
 plt.grid(True)
 plt.show()
 df_patients.describe()
-df_patients.to_csv('/Users/jigneshsisodiya/Downloads/cleaned_patients.csv', index=False)
