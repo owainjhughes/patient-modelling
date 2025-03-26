@@ -1,5 +1,5 @@
 # Big-Data-And-Predictive-Analytics
-Group Coursework for Big Data and Predictive Analytics module
+Group Coursework for Big Data and Predictive Analytics module by 3 group members. Jignesh, Owain & Jayden. 
 
 ## Data Cleansing (Jignesh) and Visualization (Owain)
 Data from Dataset.csv can be cleaned and visualized by running 'cleansing_and_visualization.ipynb'
