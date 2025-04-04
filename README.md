@@ -6,3 +6,6 @@ Data from Dataset.csv can be cleaned and visualized by running 'cleansing_and_vi
 
 ## Advanced and improved model (Jayden)
 Model can be created and trained in 'model.ipynb'
+
+## Basic Model (Jayden)
+Basic Model included logestic regression and initial classifiers.
