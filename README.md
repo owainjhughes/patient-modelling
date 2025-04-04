@@ -8,4 +8,4 @@ Data from Dataset.csv can be cleaned and visualized by running 'cleansing_and_vi
 Model can be created and trained in 'advanced_model.ipynb'
 
 ## Basic Model (Jayden)
-Basic Model included logestic regression and initial classifiers. 
+Basic Model included logestic regression and initial classifiers in 'basic_model.ipynb'
