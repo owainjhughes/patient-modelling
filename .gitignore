@@ -1,5 +1,3 @@
-Big Data and Predictive Analytics_Group_76.pdf
-group_76_selfassessment.docx
 *.pdf
 *.docx
 __pycache__/
@@ -12,3 +10,4 @@ venv/
 .env/
 .venv/
 .ipynb_checkpoints/
+basic_model_logistic_regression.pkl
