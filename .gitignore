@@ -1,2 +1,14 @@
 Big Data and Predictive Analytics_Group_76.pdf
 group_76_selfassessment.docx
+*.pdf
+*.docx
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env/
+.venv/
+.ipynb_checkpoints/
