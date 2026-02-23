@@ -20,4 +20,4 @@ In this project there are two models:
 + The advanced PySpark model that utilized kmeans clustering and subsampling
 
 ## How to Run
-The models are created in Python Notebooks. You will require an environement which can run Python Notebooks such as Jupyter ot VSCode. Dependancies can be installed using <code>pip install -r requirements.txt</code>. For PySpark you will also need Java JDK 8 or higher and a JAVA_Hme environment variable set.
+The models are created in Python Notebooks. You will require an environement which can run Python Notebooks such as Jupyter or VSCode. Dependancies can be installed using <code>pip install -r requirements.txt</code>. For PySpark you will also need Java JDK 8 or higher and a JAVA_Home environment variable set.
