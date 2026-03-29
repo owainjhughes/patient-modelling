@@ -83,14 +83,21 @@ def outlierDetection(df):
 
 def normalizeNumericColumns(df):
     numeric_cols = df.select_dtypes(include=['float64', 'int64']).columns
-    if numeric_cols.empty:
-        print("No numeric columns to normalise.")
+    # Skip low-cardinality integer columns — they are almost certainly labels/targets
+    cols_to_scale = [
+        c for c in numeric_cols
+        if not (df[c].dtype == 'int64' and df[c].nunique() <= 20)
+    ]
+    if not cols_to_scale:
+        print("No continuous numeric columns to normalise.")
         return
 
     scaler = StandardScaler()
-    df[numeric_cols] = scaler.fit_transform(df[numeric_cols])
-    print(f"\nNormalised columns: {list(numeric_cols)}")
-    print(df[numeric_cols].describe().round(3))
+    df[cols_to_scale] = scaler.fit_transform(df[cols_to_scale])
+    print(f"\nNormalised columns: {cols_to_scale}")
+    skipped = [c for c in numeric_cols if c not in cols_to_scale]
+    if skipped:
+        print(f"Skipped (low-cardinality integer): {skipped}")
 
 
 def cleanse_and_visualise(input_csv, output_csv=None):

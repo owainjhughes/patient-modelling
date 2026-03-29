@@ -19,8 +19,8 @@ def main():
     print("\n" + "="*60 + "\nSTEP 1 — Data Cleansing\n" + "="*60)
     cleanse.cleanse_and_visualise(INPUT_CSV, output_csv=CLEANED_CSV)
 
-    print("\n" + "="*60 + "\nSTEP 2 — Visualisation\n" + "="*60)
-    visualise.visualise_csv(CLEANED_CSV, output_dir=OUTPUT_DIR)
+    #print("\n" + "="*60 + "\nSTEP 1.5 — Visualisation\n" + "="*60)
+    #visualise.visualise_csv(CLEANED_CSV, output_dir=OUTPUT_DIR)
 
     print("\n" + "="*60 + "\nSTEP 3 — Random Forest & Logistic Regression\n" + "="*60)
     random_forest.run_random_forest(
