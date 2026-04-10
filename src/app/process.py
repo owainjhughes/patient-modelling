@@ -1,17 +1,14 @@
 import os
-
 import cleanse
-import visualise
 import random_forest
 import kmeans
 
-INPUT_CSV    = 'raw_data.csv'
+INPUT_CSV    = 'data/raw_data.csv'
 OUTPUT_DIR   = 'outputs'
 CLEANED_CSV  = os.path.join(OUTPUT_DIR, 'cleaned_data.csv')
 TARGET_COL   = None   # None → last column
 FEATURE_COLS = None   # None → all numeric non-target columns
 KMEANS_K     = None   # None → auto-select via silhouette score
-
 
 def main():
     os.makedirs(OUTPUT_DIR, exist_ok=True)

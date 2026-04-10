@@ -83,7 +83,7 @@ def outlierDetection(df):
 
 def normalizeNumericColumns(df):
     numeric_cols = df.select_dtypes(include=['float64', 'int64']).columns
-    # Skip low-cardinality integer columns — they are almost certainly labels/targets
+    # Skip low-cardinality integer columns — they are almost certainly labels/targets (hopefully)
     cols_to_scale = [
         c for c in numeric_cols
         if not (df[c].dtype == 'int64' and df[c].nunique() <= 20)

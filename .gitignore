@@ -12,3 +12,5 @@ venv/
 .ipynb_checkpoints/
 basic_model_logistic_regression.pkl
 /outputs
+/test_data.md
+/visualise.py

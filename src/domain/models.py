@@ -1,4 +1,3 @@
-# src/domain/models.py
 from sqlalchemy import Column, Integer, String, DateTime, ForeignKey, Float
 from datetime import datetime
 from ..infrastructure.database import Base
