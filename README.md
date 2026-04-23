@@ -1,18 +1,9 @@
 # ICU Admission Prediction Model for COVID Patients
 ## Overview
-This repository contains the Python code for predicting ICU admission for patients diagnosed with COVID, based on their medical records. The project is divided into three main parts: 
-+ Data Cleansing and Visualisation
-+ A basic predictive model 
-+ An improved PySpark model using classification and clustering techniques.
+WIP
 
 ## Objective
 The goal of the models is to accurately predict the ICU admission of COVID patients using machine learning models, based on other medical factors gleaned from their patient records. The project showcases data preprocessing and cleansing, visualization, model building, evaluation, enhanced data cleansing and model improvement.
-
-## Data
-In this project there are three datasets:
-+ The raw unsanitized data
-+ The sanitized data used in the basic model
-+ The further sanitized data used in the improved model
 
 ## Models 
 In this project there are two models:
